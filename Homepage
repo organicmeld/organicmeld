@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdant Leaf Tea</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green-dark: #1f3d2b;
+      --green-light: #4f7c5a;
+      --cream: #f6f4ef;
+      --brown: #6b4e3d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(31,61,43,0.7), rgba(31,61,43,0.7)),
+                  url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--green-dark);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .product-card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+      color: var(--green-dark);
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Verdant Leaf Tea</h1>
+      <p>Handpicked leaves. Timeless traditions. A cup of calm in every brew.</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Our Story</h2>
+    <p>
+      Verdant Leaf Tea is rooted in generations of tea craftsmanship.
+      We source premium leaves from high-altitude gardens and craft blends
+      that balance flavor, aroma, and wellness — one mindful cup at a time.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section>
+    <h2>Our Teas</h2>
+    <div class="products">
+      <div class="product-card">
+        <h3>Classic Green Tea</h3>
+        <p>Fresh, grassy notes with a smooth finish. Perfect for daily balance.</p>
+      </div>
+      <div class="product-card">
+        <h3>Royal Masala Chai</h3>
+        <p>A bold blend of black tea and warming Indian spices.</p>
+      </div>
+      <div class="product-card">
+        <h3>Herbal Serenity</h3>
+        <p>Caffeine-free herbs crafted for calm and clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@verdantleaftea.com</p>
+    <p>Instagram: @verdantleaftea</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Verdant Leaf Tea. All rights reserved.
+  </footer>
+
+</body>
+</html>
 
